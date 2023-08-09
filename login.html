@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="login">
+      <div class="logocontainer">
+        <div class="logo"><img src="photos/login_FILL0_wght400_GRAD0_opsz48.svg" alt="" class="logoimg"></div>
+        <h1>login</h1>
+      </div>
+      <div class="container">
+        <form action="home.html" onsubmit="return validateform()">
+            <h4>Username</h4>
+            <input type="text" placeholder="User Name" id="User" onkeyup="validateUser()">
+            <img src="https://em-content.zobj.net/source/skype/289/check-mark_2714-fe0f.png"
+              alt=""
+              id="userImg"
+            />
+            <br>
+            <h4>Password</h4>
+            <input type="password" placeholder="Password" id="pass" onkeyup="validatePass()">
+            <img src="https://em-content.zobj.net/source/skype/289/check-mark_2714-fe0f.png"
+            alt=""
+            id="passImg"
+          />
+            <br>
+            <input type="submit" id="submit">
+            <br>
+            <h5>Dont Have an Account ! <a href="signup.html">Sign up</a></h5>
+        </form>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
